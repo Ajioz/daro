@@ -1,7 +1,8 @@
 .mainFooter {
   position: relative;
-  background-color: #f8f9fa;
+  background-color: #000;
   padding: 80px 0 0;
+  color: #fff;
 }
 
 .autoContainer {
@@ -23,6 +24,7 @@
 
 .footerColumn {
   padding: 15px;
+    color: #fff;
 }
 
 .colXl4 {
@@ -59,6 +61,7 @@
   align-items: center;
   justify-content: center;
   width: 40px;
+  color: #333;
   height: 40px;
   background: #f0f0f0;
   border-radius: 50%;
@@ -80,7 +83,7 @@
 }
 
 .userLinks a {
-  color: #666;
+   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -102,7 +105,7 @@
 
 .contactInfo .icon {
   margin-right: 10px;
-  color: #007bff;
+  color: #fff;
 }
 
 .instaGallery {
@@ -129,14 +132,18 @@
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .colXl4, .colXl3, .colXl2 {
+  .colXl4,
+  .colXl3,
+  .colXl2 {
     flex: 0 0 50%;
     max-width: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  .colXl4, .colXl3, .colXl2 {
+  .colXl4,
+  .colXl3,
+  .colXl2 {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -158,7 +165,7 @@
 }
 
 .text {
-  color: #666;
+  color: #fff;
   line-height: 1.6;
   margin-bottom: 20px;
 }
