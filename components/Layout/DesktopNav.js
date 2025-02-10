@@ -33,9 +33,7 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
   }, []);
 
   return (
-    <div
-      className={`${styles.navbarContainer} ${isSticky ? styles.sticky : ""}`}
-    >
+    <div className={`${styles.navbarContainer}`}>
       <div className={styles.mainNavbar} ref={navbarRef}>
         <div className={`${styles.section} ${styles.sectionUtility}`}>
           <ul>
