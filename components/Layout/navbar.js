@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import DesktopNav from "./DesktopNav";
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <>
+      <DesktopNav />
+    </>
+  );
+};
 
-export default Navbar
+export default Navbar;

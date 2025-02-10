@@ -2,17 +2,7 @@ import React, { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { IoSearch } from "react-icons/io5";
 import useNavbarMonitor from "./useNavbarMonitor";
-import {
-  NavbarContainer,
-  SearchBar,
-  Section,
-  Span,
-  Text,
-  Help,
-  MainNavbar,
-  SecondaryNavbar,
-  AdvertSpecial,
-} from "./NavStyle";
+import styles from "./DesktopNav.module.css"; // Import CSS Module
 
 const DesktopNav = ({ router, target, title, loggedIn }) => {
   const { navbarRef, isOutOfView } = useNavbarMonitor();
@@ -43,82 +33,97 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
   }, []);
 
   return (
-    <NavbarContainer>
-      <MainNavbar ref={navbarRef}>
-        <Section className="utility">
+    <div
+      className={`${styles.navbarContainer} ${isSticky ? styles.sticky : ""}`}
+    >
+      <div className={styles.mainNavbar} ref={navbarRef}>
+        <div className={`${styles.section} ${styles.sectionUtility}`}>
           <ul>
             <li>About</li>
             <li>Activities</li>
             <li>Projects</li>
           </ul>
-        </Section>
+        </div>
         <HelpComponent
           items={helpLinks}
           isDropdownOpen={isDropdownOpen}
           handleMouseLeave={handleMouseLeave}
           handleMouseEnter={handleMouseEnter}
         />
-      </MainNavbar>
-      <SecondaryNavbar className={isOutOfView ? "visible" : ""}>
+      </div>
+      <div
+        className={`${styles.secondaryNavbar} ${
+          isOutOfView ? styles.secondaryNavbarVisible : ""
+        }`}
+      >
         {!target.isHome ? (
           <>
-            <Section className="utility">
-              <SearchBar>
+            <div className={`${styles.section} ${styles.sectionUtility}`}>
+              <div className={styles.searchBar}>
                 <Image
                   src="/images/sabiLogo.png"
                   width={62}
                   height={52}
                   alt="SearchBar"
                 />
-                <Text>Daro Nigeria</Text>
-                <div className="search">
+                <p className={styles.text}>Daro Nigeria</p>
+                <div className={styles.searchContainer}>
                   <input
                     type="text"
                     placeholder="Search for products, brands, categories..."
+                    className={styles.searchBarInput}
                   />
-                  <Span>
+                  <span className={styles.span}>
                     <IoSearch size={25} />
-                  </Span>
+                  </span>
                 </div>
-              </SearchBar>
+              </div>
               <HelpComponent
                 items={helpLinks}
                 isDropdownOpen={isDropdownOpen}
                 handleMouseLeave={handleMouseLeave}
                 handleMouseEnter={handleMouseEnter}
               />
-            </Section>
+            </div>
           </>
         ) : (
           <>
-            <AdvertSpecial>
+            <div className={styles.advertSpecial}>
               <p>{target.targetKey || title} latest news Here!</p>
-            </AdvertSpecial>
+            </div>
           </>
         )}
-      </SecondaryNavbar>
-    </NavbarContainer>
+      </div>
+    </div>
   );
 };
 
 export default DesktopNav;
 
-export const HelpComponent = ({
+const HelpComponent = ({
   items,
   handleMouseLeave,
   handleMouseEnter,
   isDropdownOpen,
 }) => {
   return (
-    <Help onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div
+      className={styles.help}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <span>? Help</span>
-      <div className={`dropdown ${isDropdownOpen ? "open" : ""}`}>
+      <div
+        className={`${styles.dropdown} ${
+          isDropdownOpen ? styles.dropdownOpen : ""
+        }`}
+      >
         {items.map((link, index) => (
           <a key={index} href={link.href}>
             {link.text}
           </a>
         ))}
       </div>
-    </Help>
+    </div>
   );
 };
