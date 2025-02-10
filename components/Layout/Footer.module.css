@@ -1,0 +1,164 @@
+.mainFooter {
+  position: relative;
+  background-color: #f8f9fa;
+  padding: 80px 0 0;
+}
+
+.autoContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.widgetsSection {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.footerColumn {
+  padding: 15px;
+}
+
+.colXl4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.colXl3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.colXl2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.widgetTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.socialIconTwo {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.socialIconTwo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.socialIconTwo a:hover {
+  background: #007bff;
+  color: white;
+}
+
+.userLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.userLinks li {
+  margin-bottom: 10px;
+}
+
+.userLinks a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.userLinks a:hover {
+  color: #007bff;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contactInfo .icon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.instaGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.instaGallery .image {
+  margin: 0;
+}
+
+.instaGallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footerBottom {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .colXl4, .colXl3, .colXl2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .colXl4, .colXl3, .colXl2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Badge and Login styles */
+.login {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
