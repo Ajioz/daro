@@ -1,10 +1,10 @@
 import React from "react";
-import "./preloader.module.css";
+import styles from "./preloader.module.css";
 
 const Preloader = () => {
   return (
-    <div className="preloader-wrapper">
-      <img src="/images/logo/logo.png" alt="Daro Nigeria" className="logo" />
+    <div className={styles.preloaderWrapper}>
+      <img src="/images/logo/logo-3.png" alt="Daro Nigeria" className={styles.logo} />
     </div>
   );
 };

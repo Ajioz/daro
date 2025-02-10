@@ -1,14 +1,13 @@
-.preloader-wrapper {
+.preloaderWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color: #ffd600; /* Yellow background */
   overflow: hidden;
 }
-.preloader-wrapper .logo {
+.preloaderWrapper .logo {
   height: 80px;
   margin-bottom: 20px;
 }
