@@ -2,6 +2,7 @@
 
 /* Main Navbar Container */
 .navbarContainer {
+  margin: 0;
   position: relative;
   top: 0;
   z-index: 2;
@@ -23,11 +24,24 @@
 
 /* Main Navbar */
 .mainNavbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: inherit;
   padding: 0;
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.mainNavbar ul {
+  width: 650px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Secondary Navbar */
@@ -71,18 +85,6 @@
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-}
-
-.sectionAdvert {
-  background: #00838f;
-}
-
-.sectionServices {
-  background: #eee;
-}
-
-.sectionUtility {
-  background: #00838f;
 }
 
 /* Service */

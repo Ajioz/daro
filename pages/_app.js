@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader";
-import DesktopNav from "@/components/Layout/DesktopNav";
 
 export default function App({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,8 +15,8 @@ export default function App({ Component, pageProps }) {
   }
 
   return (
-    <DesktopNav>
+    <>
       <Component {...pageProps} />;
-    </DesktopNav>
+    </>
   );
 }

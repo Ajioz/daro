@@ -35,13 +35,12 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
   return (
     <div className={`${styles.navbarContainer}`}>
       <div className={styles.mainNavbar} ref={navbarRef}>
-        <div className={`${styles.section} ${styles.sectionUtility}`}>
-          <ul>
-            <li>About</li>
-            <li>Activities</li>
-            <li>Projects</li>
-          </ul>
-        </div>
+        <Image src={"/images/logo/logo-2.png"} height={36} width={114} />
+        <ul>
+          <li>About</li>
+          <li>Activities</li>
+          <li>Projects</li>
+        </ul>
         <HelpComponent
           items={helpLinks}
           isDropdownOpen={isDropdownOpen}
