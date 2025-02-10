@@ -1,0 +1,303 @@
+/* DesktopNav.module.css */
+
+/* Main Navbar Container */
+.navbarContainer {
+  position: relative;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.navbarContainer.sticky {
+  position: sticky;
+}
+
+@media (max-width: 768px) {
+  .navbarContainer {
+    display: none;
+  }
+}
+
+/* Main Navbar */
+.mainNavbar {
+  background-color: inherit;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Secondary Navbar */
+.secondaryNavbar {
+  background-color: #555;
+  color: white;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.secondaryNavbarVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Advert Special */
+.advertSpecial {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.advertSpecial p {
+  text-transform: capitalize;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/* Sections */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.sectionAdvert {
+  background: #00838f;
+}
+
+.sectionServices {
+  background: #eee;
+}
+
+.sectionUtility {
+  background: #00838f;
+}
+
+/* Service */
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.iconStyle {
+  color: #dd2c00;
+  font-size: 1.5em;
+  margin: 0 5px;
+}
+
+/* Advert */
+.advert {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 0 10px;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background: #00796b;
+  color: #fff;
+}
+
+.menu div {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu div:hover {
+  color: goldenrod;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+}
+
+/* Search Bar */
+.searchBar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  height: 50px;
+}
+
+.searchBar img {
+  margin-right: 40px;
+}
+
+.searchBarInput {
+  width: 90%;
+  height: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.searchContainer {
+  background-color: #00838f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+/* Text */
+.text {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #ddd;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.text:hover {
+  color: #fff;
+}
+
+/* Span */
+.span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 15px;
+  border: none;
+  height: 40px;
+  width: 35px;
+  background-color: #dd2c00;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Login/Signup */
+.loginSignup {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: 1px solid inherit;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+  transition: background 0.3s ease-in-out;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.loginSignup a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.loginSignup:hover {
+  background-color: inherit;
+  color: #ddd;
+}
+
+/* Cart */
+.cart {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  opacity: 0;
+  margin: 0 0 0 20px;
+}
+
+.cartVisible {
+  opacity: 1;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: orange;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 3px 7px;
+}
+
+/* Help */
+.help {
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  width: 50px;
+  margin: 0 10px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  border-radius: 5px;
+  width: 100px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+    visibility 0.3s;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown a {
+  display: block;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown a:hover {
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.help:hover .dropdown,
+.dropdownOpen {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
