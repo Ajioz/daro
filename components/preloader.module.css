@@ -1,0 +1,22 @@
+.preloader-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffd600; /* Yellow background */
+  overflow: hidden;
+}
+.preloader-wrapper .logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .preloader-wrapper {
+    padding: 0;
+  }
+  .preloader-wrapper .logo {
+    height: 60px;
+  }
+}
