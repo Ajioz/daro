@@ -93,7 +93,7 @@ export default function Footer({ session }) {
                     <ul className={styles.socialIconTwo}>
                       <li>
                         <Link
-                          href="https://www.linkedin.com/company/ajiozi-limited"
+                          href="https://www.linkedin.com/company/daro-nigeria"
                           target="_blank"
                         >
                           <IoLogoLinkedin size={20} />
@@ -101,7 +101,7 @@ export default function Footer({ session }) {
                       </li>
                       <li>
                         <Link
-                          href="whatsapp://send?text=Hello, I am interested in learning more about your services. Could you please provide more details?&phone=+2348151654368"
+                          href="whatsapp://send?text=Hello, I am interested in learning more about your NGO. Could you please provide more details?&phone=+234xxxxxxxx"
                           target="_blank"
                         >
                           <IoLogoWhatsapp size={20} />
@@ -109,14 +109,14 @@ export default function Footer({ session }) {
                       </li>
                       <li>
                         <Link
-                          href="https://web.facebook.com/Ajiozinitiative"
+                          href="https://web.facebook.com/daro"
                           target="_blank"
                         >
                           <IoLogoFacebook size={20} />
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://x.com/ajiozi_ltd" target="_blank">
+                        <Link href="https://x.com/daro" target="_blank">
                           <IoLogoTwitter size={20} />
                         </Link>
                       </li>
@@ -162,20 +162,20 @@ export default function Footer({ session }) {
                     <ul className={styles.contactList}>
                       <li className={styles.contactInfo}>
                         <i className="icon fa fa-envelope"></i>
-                        <Link href="#" className="mailto:needajiozi@ajiozi.com">
+                        <Link href="#" className="mailto:info@daro.com">
                           info@daro.com
                         </Link>
                       </li>
                       <li className={styles.contactInfo}>
                         <i className="icon fa fa-phone"></i>
-                        <Link href="#" className="tel:+2348064107055">
+                        <Link href="#" className="tel:+234xxxxxxxx">
                           +234 xxxxxxxxx
                         </Link>
                       </li>
                       <li className={styles.contactInfo}>
                         <i className="icon fa fa-phone"></i>
-                        <Link href="#" className="tel:+2348064107055">
-                          +234 8151 6543 68
+                        <Link href="#" className="tel:+234xxxxxxxx">
+                          +234 xxxxxxxxxxx
                         </Link>
                       </li>
                       {isUser ? (
