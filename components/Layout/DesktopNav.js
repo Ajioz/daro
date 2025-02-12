@@ -55,27 +55,22 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
           isOutOfView ? styles.secondaryNavbarVisible : ""
         }`}
       >
-        {!target.isHome ? (
+        {target.isHome ? (
           <>
             <div className={`${styles.section} ${styles.sectionUtility}`}>
-              <div className={styles.searchBar}>
+              <div className={styles.mainNavbar}>
                 <Image
-                  src="/images/sabiLogo.png"
-                  width={62}
-                  height={52}
-                  alt="SearchBar"
+                  src={"/images/logo/logo-2.png"}
+                  height={36}
+                  width={114}
                 />
-                <p className={styles.text}>Daro Nigeria</p>
-                <div className={styles.searchContainer}>
-                  <input
-                    type="text"
-                    placeholder="Search for products, brands, categories..."
-                    className={styles.searchBarInput}
-                  />
-                  <span className={styles.span}>
-                    <IoSearch size={25} />
-                  </span>
-                </div>
+                <ul>
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Programs</li>
+                  <li>Testimonies</li>
+                  <li>Gallery</li>
+                </ul>
               </div>
               <HelpComponent
                 items={helpLinks}
