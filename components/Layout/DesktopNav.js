@@ -37,9 +37,11 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
       <div className={styles.mainNavbar} ref={navbarRef}>
         <Image src={"/images/logo/logo-2.png"} height={36} width={114} />
         <ul>
-          <li>About</li>
-          <li>Activities</li>
-          <li>Projects</li>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Programs</li>
+          <li>Testimonies</li>
+          <li>Gallery</li>
         </ul>
         <HelpComponent
           items={helpLinks}
@@ -109,7 +111,7 @@ const HelpComponent = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <span>? Help</span>
+      <span>Help</span>
       <div
         className={`${styles.dropdown} ${
           isDropdownOpen ? styles.dropdownOpen : ""

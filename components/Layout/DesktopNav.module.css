@@ -4,12 +4,13 @@
 .navbarContainer {
   margin: 0;
   position: relative;
-  top: 0;
-  z-index: 2;
+  top: 0px;
+  z-index: 12;
   width: 100%;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.3);
   font-size: 14px;
+  /* border: 1px solid #333; */
 }
 
 .navbarContainer.sticky {
@@ -24,6 +25,7 @@
 
 /* Main Navbar */
 .mainNavbar {
+  width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
@@ -43,9 +45,13 @@
   margin: 0;
   padding: 0;
 }
+.mainNavbar ul li{
+ color: #fff;
+}
 
 /* Secondary Navbar */
 .secondaryNavbar {
+  height: 70px;
   background-color: #555;
   color: white;
   padding: 0;
@@ -69,7 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 70px;
 }
 
 .advertSpecial p {
@@ -87,15 +93,6 @@
   padding: 10px 20px;
 }
 
-/* Service */
-.service {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-  cursor: pointer;
-  width: 150px;
-}
 
 .iconStyle {
   color: #dd2c00;
@@ -110,7 +107,6 @@
   align-items: center;
   height: 50px;
   width: 100%;
-  margin: 0 10px;
   font-size: 4rem;
   cursor: pointer;
   color: #fff;
@@ -269,7 +265,7 @@
 .dropdown {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
@@ -285,6 +281,8 @@
 
 .dropdown a {
   display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
   text-decoration: none;
