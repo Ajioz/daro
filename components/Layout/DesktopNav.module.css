@@ -90,8 +90,8 @@
 .section {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
+  justify-content: space-around;
+  /* padding: 10px 20px; */
 }
 
 
