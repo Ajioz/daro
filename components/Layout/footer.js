@@ -91,7 +91,7 @@ export default function Footer() {
         <p>
           <IoMailOpen size={20} style={{ marginRight: "5px" }} />
           <Link href="mailto:ajiozi@ajiozi.com">
-            ajiozi@ajiozi.com
+            info@daro.ng.org
           </Link>
         </p>
         <p>
