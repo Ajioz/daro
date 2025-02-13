@@ -90,9 +90,7 @@ export default function Footer() {
         <p>#31 Airport Road, Lagos, Nigeria</p>
         <p>
           <IoMailOpen size={20} style={{ marginRight: "5px" }} />
-          <Link href="mailto:ajiozi@ajiozi.com">
-            info@daro.ng.org
-          </Link>
+          <Link href="mailto:ajiozi@ajiozi.com">info@daro.ng.org</Link>
         </p>
         <p>
           <IoCall size={20} /> +234 8064 1070 55
@@ -111,12 +109,42 @@ export default function Footer() {
           PROJECTS <span>—</span>
         </h3>
         <div className={styles.projectGrid}>
-          <Image src="/project1.jpg" alt="Project 1" width={80} height={80} />
-          <Image src="/project2.jpg" alt="Project 2" width={80} height={80} />
-          <Image src="/project3.jpg" alt="Project 3" width={80} height={80} />
-          <Image src="/project4.jpg" alt="Project 4" width={80} height={80} />
-          <Image src="/project5.jpg" alt="Project 5" width={80} height={80} />
-          <Image src="/project6.jpg" alt="Project 6" width={80} height={80} />
+          <Image
+            src="/images/footer/footer1.jpg"
+            alt="Project 1"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/images/footer/footer2.jpg"
+            alt="Project 2"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/images/footer/footer3.webp"
+            alt="Project 3"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/images/footer/footer4.jpg"
+            alt="Project 4"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/images/footer/footer5.jpg"
+            alt="Project 5"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/images/footer/footer6.jpg"
+            alt="Project 6"
+            width={80}
+            height={80}
+          />
         </div>
       </div>
 
