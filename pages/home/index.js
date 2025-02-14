@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import HomeComponent from "@/components/Home";
 import RollOver from "@/components/Home/Rollover";
 import Navbar from "@/components/Layout/navbar";
@@ -9,6 +10,7 @@ const Hompage = () => {
       <Navbar title={"Home"} />
       <HomeComponent />
       <RollOver />
+      <About />
     </>
   );
 };

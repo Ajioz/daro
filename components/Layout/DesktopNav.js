@@ -1,6 +1,5 @@
 import React, { useState, useRef, useCallback } from "react";
 import Image from "next/image";
-import { IoSearch } from "react-icons/io5";
 import useNavbarMonitor from "./useNavbarMonitor";
 import styles from "./DesktopNav.module.css"; // Import CSS Module
 
@@ -35,7 +34,12 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
   return (
     <div className={`${styles.navbarContainer}`}>
       <div className={styles.mainNavbar} ref={navbarRef}>
-        <Image src={"/images/logo/logo-2.png"} height={36} width={114} />
+        <Image
+          src={"/images/logo/logo-2.png"}
+          height={36}
+          width={114}
+          onClick={goHome}
+        />
         <ul>
           <li>Home</li>
           <li>About Us</li>

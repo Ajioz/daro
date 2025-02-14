@@ -33,6 +33,7 @@
   top: 0;
   z-index: 10;
 }
+
 .mainNavbar img{
   margin: 0 10px;
   border-radius: 50%;
@@ -46,9 +47,28 @@
   margin: 0;
   padding: 0;
 }
-.mainNavbar ul li{
- color: #fff;
+
+.mainNavbar ul li {
+  position: relative; /* Required for the pseudo-element positioning */
+  color: #fff;
+  cursor: pointer;
 }
+
+.mainNavbar ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  background-color: gold;
+  transition: width 0.3s ease-in-out; /* Transition for the sliding effect */
+}
+
+.mainNavbar ul li:hover::after {
+  width: 100%; /* Expand the width on hover */
+}
+
 
 /* Secondary Navbar */
 .secondaryNavbar {

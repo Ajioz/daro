@@ -3,6 +3,7 @@ import Image from "next/image";
 import {
   IoCall,
   IoLogoFacebook,
+  IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoTwitter,
   IoLogoWhatsapp,
@@ -30,10 +31,10 @@ export default function Footer() {
           <ul>
             <li>
               <Link
-                href="https://www.linkedin.com/company/daro-nigeria"
+                href="https://www.instagram.com/daro-nigeria"
                 target="_blank"
               >
-                <IoLogoLinkedin size={20} />
+                <IoLogoInstagram size={20} />
               </Link>
             </li>
             <li>

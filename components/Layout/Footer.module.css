@@ -66,12 +66,12 @@
 }
 
 /* Specific Colors for Each Icon */
-.socialIcons a[href*="linkedin.com"] {
-  color: #0077b5;
+.socialIcons a[href*="instagram.com"] {
+  color: #833AB4;
 }
 
-.socialIcons a[href*="linkedin.com"]:hover {
-  background: #0077b5;
+.socialIcons a[href*="instagram.com"]:hover {
+  background: #833AB4;
   color: white;
 }
 
