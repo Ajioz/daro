@@ -22,8 +22,8 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
   const helpLinks = [
     { text: "Help Centre", href: "#" },
     { text: "Contact Us", href: "#" },
-    { text: "Track My Order", href: "#" },
-    { text: "Return Policy", href: "#" },
+    { text: "Need Prayer ", href: "#" },
+    { text: "Report Emergency", href: "#" },
     { text: "FAQs", href: "#" },
   ];
 

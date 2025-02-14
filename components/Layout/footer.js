@@ -97,9 +97,9 @@ export default function Footer() {
         <p>
           <IoCall size={20} /> +234 7064 7991 93
         </p>
-        <p>
+        {/* <p>
           <Link href="#">Messages</Link> | <Link href="#">Logout</Link>
-        </p>
+        </p> */}
       </div>
 
       {/* Projects Section */}
