@@ -4,11 +4,9 @@ import {
   IoCall,
   IoLogoFacebook,
   IoLogoInstagram,
-  IoLogoLinkedin,
   IoLogoTwitter,
   IoLogoWhatsapp,
   IoMailOpen,
-  IoMegaphone,
 } from "react-icons/io5";
 import Link from "next/link";
 
@@ -91,13 +89,13 @@ export default function Footer() {
         <p>#31 Airport Road, Lagos, Nigeria</p>
         <p>
           <IoMailOpen size={20} style={{ marginRight: "5px" }} />
-          <Link href="mailto:ajiozi@ajiozi.com">info@daro.ng.org</Link>
+          <Link href="mailto:info@daro.ng.org">info@daro.ng.org</Link>
         </p>
         <p>
-          <IoCall size={20} /> +234 8064 1070 55
+          <IoCall size={20} /> +234 7032 9429 93
         </p>
         <p>
-          <IoCall size={20} /> +234 8151 6543 68
+          <IoCall size={20} /> +234 7064 7991 93
         </p>
         <p>
           <Link href="#">Messages</Link> | <Link href="#">Logout</Link>

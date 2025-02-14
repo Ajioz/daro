@@ -39,12 +39,12 @@
 }
 
 .halfBorderBottom::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%; /* Start from the middle */
   bottom: -10px;
   width: 50%; /* Half the width of the content */
   height: 5px; /* Border height */
   background-color: gold;
-  transform: translateX(-100%); /* Center the border */
+  transform: translateX(-100%); /* start from the beginning of the text */
 }
