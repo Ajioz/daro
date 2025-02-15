@@ -34,7 +34,7 @@
   z-index: 10;
 }
 
-.mainNavbar img{
+.mainNavbar img {
   margin: 0 10px;
   border-radius: 50%;
 }
@@ -56,7 +56,7 @@
 }
 
 .mainNavbar ul li::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -69,7 +69,6 @@
 .mainNavbar ul li:hover::after {
   width: 100%; /* Expand the width on hover */
 }
-
 
 /* Secondary Navbar */
 .secondaryNavbar {
@@ -113,7 +112,6 @@
   align-items: center;
   justify-content: space-around;
 }
-
 
 .iconStyle {
   color: #dd2c00;
@@ -302,7 +300,7 @@
 
 .dropdown a {
   display: block;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 12px;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
@@ -321,4 +319,28 @@
   transform: translateY(0);
   visibility: visible;
   pointer-events: auto;
+}
+
+.donate {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 1px solid #ddd;
+}
+
+.donate .donateBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 120px;
+  background-color: #e65100;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.donate .donateBtn:hover {
+  border: 1px solid #888;
+  background-color: #263238;
+  cursor: pointer;
 }
