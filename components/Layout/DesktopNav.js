@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import useNavbarMonitor from "./useNavbarMonitor";
 import styles from "./DesktopNav.module.css"; // Import CSS Module
+import { IoBasket, IoHeart, IoSearch } from "react-icons/io5";
 
 const DesktopNav = ({ router, target, title, loggedIn }) => {
   const { navbarRef, isOutOfView } = useNavbarMonitor();
@@ -63,11 +64,6 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
           <>
             <div className={`${styles.section} ${styles.sectionUtility}`}>
               <div className={styles.mainNavbar}>
-                <Image
-                  src={"/images/logo/logo-2.png"}
-                  height={36}
-                  width={114}
-                />
                 <ul>
                   <li>Home</li>
                   <li>About Us</li>
@@ -76,12 +72,14 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
                   <li>Gallery</li>
                 </ul>
               </div>
-              <HelpComponent
-                items={helpLinks}
-                isDropdownOpen={isDropdownOpen}
-                handleMouseLeave={handleMouseLeave}
-                handleMouseEnter={handleMouseEnter}
-              />
+              <div className={styles.donate}>
+                <IoSearch size={30} />
+                <IoBasket size={30} />
+                <div className={styles.donateBtn}>
+                  <IoHeart size={30} />
+                  <span>Donate</span>
+                </div>
+              </div>
             </div>
           </>
         ) : (
