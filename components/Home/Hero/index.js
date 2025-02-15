@@ -9,26 +9,40 @@ const images = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [prevIndex, setPrevIndex] = useState(-1);
 
-  // Automatically slide every 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setPrevIndex(currentIndex);
+      setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 10000);
 
-    return () => clearInterval(timer); // Cleanup
-  }, [currentIndex, images.length]);
-
-  const heroStyle = {
-    background: `linear-gradient(rgba(8,0,58,0.7),rgba(0, 58, 30, 0.462)), url(${images[currentIndex]})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    transition: "background 10s ease-in-out",
-  };
+    return () => clearInterval(timer);
+  }, [currentIndex]);
 
   return (
-    <div className={`${styles.hero} container`} style={heroStyle}>
-      <div className={styles["hero-text"]}>
+    <div className={`${styles.hero} container`}>
+      {/* Background layers */}
+      <div className={styles.backgroundContainer}>
+        {images.map((img, index) => (
+          <div
+            key={img}
+            className={`${styles.backgroundLayer} ${
+              index === currentIndex ? styles.active : ""
+            } ${index === prevIndex ? styles.fading : ""}`}
+            style={{
+              backgroundImage: `url(${img})`,
+              zIndex: index === currentIndex ? 2 : 1,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Gradient overlay (constant) */}
+      <div className={styles.gradientOverlay} />
+
+      {/* Content */}
+      <div className={styles.heroText}>
         <h1>Achieving Peace through ministering to the Needy</h1>
         <p>
           Divine Assistance Relief Organization (DARO) believes in the power of
