@@ -14,18 +14,25 @@ const FundRaising = () => {
           <div className={fundStyle.cardImage}>
             <Image
               src={"/images/main/needy0.jpg"}
-              alt="Fund Raising"
+              alt="Fund Rising"
               width={200}
               height={200}
             />
             <button className={fundStyle.btn}>Donate Now</button>
           </div>
           <div className={fundStyle.cardContent}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eget sapien sapien. Curabitur in metus urna. In hac habitasse
-              platea dictumst.
-            </p>
+            <div className={fundStyle.projection}>
+              <span>Goal: ${9860}</span>
+              <span>Rised: ${860}</span>
+            </div>
+            <div className={fundStyle.title}>
+              <h1>Financial Help for poor families</h1>
+            </div>
+            <div className={fundStyle.description}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              </p>
+            </div>
           </div>
         </section>
       </div>
