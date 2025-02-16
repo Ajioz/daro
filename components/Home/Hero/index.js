@@ -32,6 +32,7 @@ const Hero = () => {
             } ${index === prevIndex ? styles.fading : ""}`}
             style={{
               backgroundImage: `url(${img})`,
+              backgroundPositionX: "left",
               zIndex: index === currentIndex ? 2 : 1,
             }}
           />
