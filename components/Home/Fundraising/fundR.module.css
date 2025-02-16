@@ -51,6 +51,7 @@
   height: 500px;
   background-color: #000;
   margin: 20px;
+  padding: 0;
   border: 2px solid #444;
 }
 .container .content .card .cardImage {
@@ -63,24 +64,24 @@
 }
 .container .content .card img {
   right: 20;
-  padding: 50px;
-  width: 100%;
-  height: 100%;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%; 
   transition: 0.5s ease-in-out;
 }
 .container .content .card .btn {
   position: absolute;
-  top: 150;
+  top: 120;
   background-color: #ff7043;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1rem;
   color: #fff;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bolder;
   margin: 0;
-  padding: 10px 20px;
+  padding: 12px 20px;
   display: none;
 }
 
@@ -91,4 +92,15 @@
 
 .container .content .card:hover .btn {
   display: block;
+}
+
+
+.container .content .card .cardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222;
+  width: 100%;
+  height: 196px;
 }

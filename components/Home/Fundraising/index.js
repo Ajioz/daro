@@ -15,8 +15,8 @@ const FundRaising = () => {
             <Image
               src={"/images/main/needy0.jpg"}
               alt="Fund Raising"
-              width={250}
-              height={250}
+              width={200}
+              height={200}
             />
             <button className={fundStyle.btn}>Donate Now</button>
           </div>
