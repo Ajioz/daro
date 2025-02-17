@@ -76,7 +76,7 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
                 <IoSearch size={30} />
                 <IoBasket size={30} />
                 <div className={styles.donateBtn}>
-                  <IoHeart size={20} />
+                  <IoHeart size={20} style={{ zIndex: 1 }} />
                   <span>Donate</span>
                 </div>
               </div>
