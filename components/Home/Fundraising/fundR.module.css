@@ -69,16 +69,16 @@
 .container .content .card::before {
   top: 0;
   left: 0;
-  border-top: 3px solid #ff9100;
-  border-left: 3px solid #ff9100;
+  border-top: 3px solid #ff6d00;
+  border-left: 3px solid #ff6d00;
   transition: width 0.3s ease-in-out 0.1s, height 0.5s ease-in-out 0.2s;
 }
 
 .container .content .card::after {
   bottom: 0;
   right: 0;
-  border-bottom: 3px solid #ff9100;
-  border-right: 3px solid #ff9100;
+  border-bottom: 3px solid #ff6d00;
+  border-right: 3px solid #ff6d00;
   transition: width 0.3s ease-in-out 0.1s, height 0.5s ease-in-out 0.2s;
 }
 
