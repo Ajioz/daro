@@ -39,7 +39,7 @@ export const onGoingProject = [
     img: "/images/main/project7.jpg",
     goal: 90860,
     Rised: 1980,
-    title: "Education for Poor Children",
+    title: "Improving the lives of the elderly",
     description: "The orderly are often neglected resulting to 17% early death",
   },
   {
