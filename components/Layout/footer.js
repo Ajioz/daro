@@ -13,140 +13,141 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      {/* Left Section */}
-      <div className={styles.footerLeft}>
-        <Image
-          src="/images/logo/logo-3.png"
-          alt="daro"
-          width={100}
-          height={40}
-        />
-        <p>
-          Strives to alleviate suffering, because it is compassionate, but
-          occasionally circumstances.
-        </p>
-        <div className={styles.socialIcons}>
+      <div className={styles.footerWrapper}>
+        {/* Left Section */}
+        <div className={styles.footerLeft}>
+          <Image
+            src="/images/logo/logo-3.png"
+            alt="daro"
+            width={100}
+            height={40}
+          />
+          <p>
+            Strives to alleviate suffering, because it is compassionate, but
+            occasionally circumstances.
+          </p>
+          <div className={styles.socialIcons}>
+            <ul>
+              <li>
+                <Link
+                  href="https://www.instagram.com/daro-nigeria"
+                  target="_blank"
+                >
+                  <IoLogoInstagram size={20} />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="whatsapp://send?text=Hello, I am interested in learning more about your NGO. Could you please provide more details?&phone=+234xxxxxxxx"
+                  target="_blank"
+                >
+                  <IoLogoWhatsapp size={20} />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://web.facebook.com/daro" target="_blank">
+                  <IoLogoFacebook size={20} />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://x.com/daro" target="_blank">
+                  <IoLogoTwitter size={20} />
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Explore Section */}
+        <div className={styles.footerSection}>
+          <h3>
+            EXPLORE <span>—</span>
+          </h3>
           <ul>
             <li>
-              <Link
-                href="https://www.instagram.com/daro-nigeria"
-                target="_blank"
-              >
-                <IoLogoInstagram size={20} />
-              </Link>
+              <Link href="#">About Daro</Link>
             </li>
             <li>
-              <Link
-                href="whatsapp://send?text=Hello, I am interested in learning more about your NGO. Could you please provide more details?&phone=+234xxxxxxxx"
-                target="_blank"
-              >
-                <IoLogoWhatsapp size={20} />
-              </Link>
+              <Link href="#">Meet the Team</Link>
             </li>
             <li>
-              <Link href="https://web.facebook.com/daro" target="_blank">
-                <IoLogoFacebook size={20} />
-              </Link>
+              <Link href="#">News & Media</Link>
             </li>
             <li>
-              <Link href="https://x.com/daro" target="_blank">
-                <IoLogoTwitter size={20} />
-              </Link>
+              <Link href="#">Our Projects</Link>
+            </li>
+            <li>
+              <Link href="#">Contact</Link> | <Link href="#">FAQ</Link>
             </li>
           </ul>
         </div>
-      </div>
 
-      {/* Explore Section */}
-      <div className={styles.footerSection}>
-        <h3>
-          EXPLORE <span>—</span>
-        </h3>
-        <ul>
-          <li>
-            <Link href="#">About Daro</Link>
-          </li>
-          <li>
-            <Link href="#">Meet the Team</Link>
-          </li>
-          <li>
-            <Link href="#">News & Media</Link>
-          </li>
-          <li>
-            <Link href="#">Our Projects</Link>
-          </li>
-          <li>
-            <Link href="#">Contact</Link> | <Link href="#">FAQ</Link>
-          </li>
-        </ul>
-      </div>
-
-      {/* Contact Section */}
-      <div className={styles.footerSection}>
-        <h3>
-          CONTACT <span>—</span>
-        </h3>
-        <p>#31 Airport Road, Lagos, Nigeria</p>
-        <p>
-          <IoMailOpen size={20} style={{ marginRight: "5px" }} />
-          <Link href="mailto:info@daro.ng.org">info@daro.ng.org</Link>
-        </p>
-        <p>
-          <IoCall size={20} /> +234 7032 9429 93
-        </p>
-        <p>
-          <IoCall size={20} /> +234 7064 7991 93
-        </p>
-        {/* <p>
+        {/* Contact Section */}
+        <div className={styles.footerSection}>
+          <h3>
+            CONTACT <span>—</span>
+          </h3>
+          <p>#31 Airport Road, Lagos, Nigeria</p>
+          <p>
+            <IoMailOpen size={20} style={{ marginRight: "5px" }} />
+            <Link href="mailto:info@daro.ng.org">info@daro.ng.org</Link>
+          </p>
+          <p>
+            <IoCall size={20} /> +234 7032 9429 93
+          </p>
+          <p>
+            <IoCall size={20} /> +234 7064 7991 93
+          </p>
+          {/* <p>
           <Link href="#">Messages</Link> | <Link href="#">Logout</Link>
         </p> */}
-      </div>
+        </div>
 
-      {/* Projects Section */}
-      <div className={styles.footerProjects}>
-        <h3>
-          PROJECTS <span>—</span>
-        </h3>
-        <div className={styles.projectGrid}>
-          <Image
-            src="/images/footer/footer1.jpg"
-            alt="Project 1"
-            width={80}
-            height={80}
-          />
-          <Image
-            src="/images/footer/footer2.jpg"
-            alt="Project 2"
-            width={80}
-            height={80}
-          />
-          <Image
-            src="/images/footer/footer3.webp"
-            alt="Project 3"
-            width={80}
-            height={80}
-          />
-          <Image
-            src="/images/footer/footer4.jpg"
-            alt="Project 4"
-            width={80}
-            height={80}
-          />
-          <Image
-            src="/images/footer/footer5.jpg"
-            alt="Project 5"
-            width={80}
-            height={80}
-          />
-          <Image
-            src="/images/footer/footer6.jpg"
-            alt="Project 6"
-            width={80}
-            height={80}
-          />
+        {/* Projects Section */}
+        <div className={styles.footerProjects}>
+          <h3>
+            PROJECTS <span>—</span>
+          </h3>
+          <div className={styles.projectGrid}>
+            <Image
+              src="/images/footer/footer1.jpg"
+              alt="Project 1"
+              width={80}
+              height={80}
+            />
+            <Image
+              src="/images/footer/footer2.jpg"
+              alt="Project 2"
+              width={80}
+              height={80}
+            />
+            <Image
+              src="/images/footer/footer3.webp"
+              alt="Project 3"
+              width={80}
+              height={80}
+            />
+            <Image
+              src="/images/footer/footer4.jpg"
+              alt="Project 4"
+              width={80}
+              height={80}
+            />
+            <Image
+              src="/images/footer/footer5.jpg"
+              alt="Project 5"
+              width={80}
+              height={80}
+            />
+            <Image
+              src="/images/footer/footer6.jpg"
+              alt="Project 6"
+              width={80}
+              height={80}
+            />
+          </div>
         </div>
       </div>
-
       {/* Bottom Footer */}
       <div className={styles.footerBottom}>
         <p>
