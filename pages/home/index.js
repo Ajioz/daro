@@ -4,19 +4,21 @@ import Blog from "@/components/Home/Blog";
 import FundRaising from "@/components/Home/Fundraising";
 import Report from "@/components/Home/Report";
 import RollOver from "@/components/Home/Rollover";
+import Layout from "@/components/Layout";
 import Navbar from "@/components/Layout/navbar";
 import React from "react";
 
 const Hompage = () => {
   return (
     <>
-      <Navbar title={"Home"} />
-      <HomeComponent />
-      <RollOver />
-      <About />
-      <FundRaising />
-      <Report />
-      <Blog />
+      <Layout title={"Home"}>
+        <HomeComponent />
+        <RollOver />
+        <About />
+        <FundRaising />
+        <Report />
+        <Blog />
+      </Layout>
     </>
   );
 };
