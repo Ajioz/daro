@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./blog.module.css";
 import Image from "next/image";
 import { blog } from "@/data";
-import NewsLetter from "./newsLetter";
 
 const Blog = () => {
   return (
