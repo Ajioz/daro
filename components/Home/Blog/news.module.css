@@ -2,12 +2,14 @@
   width: 70%;
   height: 300px;
   background-color: #212121;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 15px -1px rgba(0,0,0,1);
+-webkit-box-shadow: 1px 2px 15px -1px rgba(0,0,0,1);
+-moz-box-shadow: 1px 2px 15px -1px rgba(0,0,0,1);
   margin: 0 auto -20vh auto;
   z-index: 1;
 }
@@ -15,13 +17,11 @@
 .container h1 {
   color: white;
   font-size: 2.5rem;
-  margin: 20px;
 }
 .container p {
   color: #bebbbb;
   font-size: 1.1rem;
   font-weight: 100;
-  margin: 20px;
 }
 
 .Wrapper {
@@ -31,7 +31,6 @@
 }
 
 .formWrapper {
-  margin: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
