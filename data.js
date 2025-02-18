@@ -51,3 +51,35 @@ export const onGoingProject = [
     description: "A healthy society produces better children",
   },
 ];
+
+export const blog = [
+  {
+    _id: "household_01",
+    img: "/images/main/needy6.jpg",
+    title: "Enhancing Family Nutrition",
+    description:
+      "Empowering families with nutritious food for a healthier future.",
+    author: "Ajiroghene Elo",
+    authorImg: "/images/main/daromd.jpg",
+    date: "2021-08-08",
+  },
+  {
+    _id: "household_02",
+    img: "/images/main/needy5.jpg",
+    title: "Boosting Household Health",
+    description: "Promoting well-being through improved dietary practices.",
+    author: "Ajiroghene Elo",
+    authorImg: "/images/main/daromd.jpg",
+    date: "2021-08-08",
+  },
+  {
+    _id: "household_03",
+    img: "/images/main/needy2.jpg",
+    title: "Nourishing Communities",
+    description:
+      "Fostering a healthier society by enhancing nutrition at home.",
+    author: "Ajiroghene Elo",
+    authorImg: "/images/main/daromd.jpg",
+    date: "2021-08-08",
+  },
+];

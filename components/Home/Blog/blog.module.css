@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: #212121; */
   background-color: #fff;
 }
 
@@ -30,13 +29,14 @@
   margin-top: 1rem;
 }
 
-.container .blog {
+.container .blogs {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   width: 90%;
-  min-height: 50vh;
+  background-color: inherit;
+  height: fit-content;
 }
 
 
@@ -56,9 +56,47 @@
 .container .blogs .blogCard .content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
     padding: 1rem;
+}
+
+.container .blogs .blogCard .content h3 {
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 3px 0;
+  text-align: left;
+  transition: color 0.3s ease-in-out;
+}
+.container .blogs .blogCard .content p {
+  font-size: 0.9rem;
+  margin: 3px auto;
+  text-align: justify;
+  color: #333;
+}
+
+.container .blogs .blogCard .content h3:hover {
+  color: goldenrod;
+}
+
+.container .blogs .blogCard .content .chipInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+  min-height: 50px;
+}
+
+.content .chipInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.content .chipInfo .author, .date {
+    font-size: 0.8rem;
+    margin: 0 5px;
 }
