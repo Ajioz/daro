@@ -8,7 +8,7 @@ const FundRaising = () => {
     <div className={fundStyle.container}>
       <div className={fundStyle.header}>
         <h1>Highlight</h1>
-        <p>Latest Fund Rising Project</p>
+        <p>Latest Fund Raising Project</p>
       </div>
       <div className={fundStyle.content}>
         {onGoingProject.map((item, _i) => (
@@ -16,7 +16,7 @@ const FundRaising = () => {
             <div className={fundStyle.cardImage}>
               <Image
                 src={item.img}
-                alt="Fund Rising"
+                alt="Fund Raising"
                 width={200}
                 height={200}
               />
@@ -25,7 +25,7 @@ const FundRaising = () => {
             <div className={fundStyle.cardContent}>
               <div className={fundStyle.projection}>
                 <span>Goal: ${item.goal}</span>
-                <span>Rised: ${item.Rised}</span>
+                <span>Raised: ${item.Raised}</span>
               </div>
               <div className={fundStyle.title}>
                 <h1>{item.title}</h1>
