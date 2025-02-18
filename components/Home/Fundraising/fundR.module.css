@@ -18,12 +18,14 @@
 }
 
 .container .header h1 {
-  color: #ff5722;
-  font-size: 1rem;
+  color: #ff6d00;
+  font-size: 1.3rem;
   margin: 0;
   padding: 10px;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: monospace;
   font-weight: bolder;
+  border-bottom: 1px solid #fff;
+  line-height: 2.5px;
 }
 
 .container .header p {

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "./hero.module.css";
 
 const images = [
-  "/images/main-slider/needy7.jpg",
   "/images/main-slider/needy8.jpg",
   "/images/main-slider/needy9.jpg",
+  "/images/main-slider/needy7.jpg",
 ];
 
 const Hero = () => {

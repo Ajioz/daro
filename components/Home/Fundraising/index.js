@@ -7,7 +7,7 @@ const FundRaising = () => {
   return (
     <div className={fundStyle.container}>
       <div className={fundStyle.header}>
-        <h1>higlights</h1>
+        <h1>Highlight</h1>
         <p>Latest Fund Rising Project</p>
       </div>
       <div className={fundStyle.content}>
