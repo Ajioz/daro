@@ -9,11 +9,14 @@ import {
   IoMailOpen,
 } from "react-icons/io5";
 import Link from "next/link";
+import NewsLetter from "../Home/Blog/newsLetter";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+        <NewsLetter />
       <div className={styles.footerWrapper}>
+        <section className={styles.space}></section>
         {/* Left Section */}
         <div className={styles.footerLeft}>
           <Image

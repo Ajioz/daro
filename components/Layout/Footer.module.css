@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  min-height: fit-content;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .footer .footerWrapper {
-  padding: 40px 60px;
+  padding: 80px 60px;
   background-color: black;
   margin: 0 0 -70px 0;
-  min-height: 50vh;
+  min-height: 80vh;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -17,8 +18,14 @@
   align-items: flex-start;
   gap: 20px;
   box-sizing: border-box;
+  z-index: -10;
 }
 
+.footer .footerWrapper .space {
+  height: 10vh;
+  width: 100%;
+  z-index: -10;
+}
 /* Left Section */
 .footerLeft {
   flex: 1;
@@ -218,6 +225,8 @@
   background-color: #212121;
   margin: 0 0 -70px 0;
 }
+
+
 .footerBottom p {
   text-align: center;
   font-size: 1rem;
