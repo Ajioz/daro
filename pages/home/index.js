@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import HomeComponent from "@/components/Home";
+import Blog from "@/components/Home/Blog";
 import FundRaising from "@/components/Home/Fundraising";
 import Report from "@/components/Home/Report";
 import RollOver from "@/components/Home/Rollover";
@@ -15,6 +16,7 @@ const Hompage = () => {
       <About />
       <FundRaising />
       <Report />
+      <Blog />
     </>
   );
 };
