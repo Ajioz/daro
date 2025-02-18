@@ -1,9 +1,9 @@
 /* Main Navbar Container */
 .navbarContainer {
-  margin: 0;
+  margin: -100px auto;
+  z-index: 10;
   position: relative;
-  top: 0px;
-  z-index: 12;
+  top: 100px;
   width: 100%;
   background: transparent;
   box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.3);
@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: inherit;
+  background-color: transparent;
   padding: 0;
   position: sticky;
   top: 0;
@@ -119,17 +119,6 @@
   margin: 0 5px;
 }
 
-/* Advert */
-.advert {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50px;
-  width: 100%;
-  font-size: 4rem;
-  cursor: pointer;
-  color: #fff;
-}
 
 /* Menu */
 .menu {
@@ -155,109 +144,6 @@
     flex-wrap: wrap;
     font-size: 12px;
   }
-}
-
-/* Search Bar */
-.searchBar {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0px;
-  height: 50px;
-}
-
-.searchBar img {
-  margin-right: 40px;
-}
-
-.searchBarInput {
-  width: 90%;
-  height: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-}
-
-.searchContainer {
-  background-color: #00838f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 30px;
-}
-
-/* Text */
-.text {
-  margin: 0 10px;
-  font-weight: bold;
-  color: #ddd;
-  transition: color 0.3s ease;
-  cursor: pointer;
-}
-
-.text:hover {
-  color: #fff;
-}
-
-/* Span */
-.span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 15px;
-  border: none;
-  height: 40px;
-  width: 35px;
-  background-color: #dd2c00;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-
-/* Login/Signup */
-.loginSignup {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2px 5px;
-  padding: 5px 15px;
-  cursor: pointer;
-  border: 1px solid inherit;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
-  background-color: #333;
-  transition: background 0.3s ease-in-out;
-  border-radius: 10px;
-  width: 100px;
-}
-
-.loginSignup a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.loginSignup:hover {
-  background-color: inherit;
-  color: #ddd;
-}
-
-/* Cart */
-.cart {
-  position: relative;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  width: 50px;
-  opacity: 0;
-  margin: 0 0 0 20px;
-}
-
-.cartVisible {
-  opacity: 1;
 }
 
 .badge {
