@@ -105,7 +105,7 @@
 }
 
 .bodyText button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -123,11 +123,58 @@
   z-index: 1; /* Keep text above the pseudo-element */
 }
 
-
 .bodyText button:hover {
   color: #fff; /* Change text color to white on hover */
 }
 
 .bodyText button:hover::before {
   transform: scaleX(1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .header span {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .bodyWrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .bodyImage {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .bodyImage img {
+    width: 100%;
+  }
+
+  .bodyText {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header span {
+    font-size: 1.8rem;
+    line-height: 35px;
+  }
+  .header p {
+    font-size: 0.7rem;
+  }
+  .bodyText h1 {
+    font-size: 1.3rem;
+  }
+  .bodyText p {
+    font-size: 0.9rem;
+  }
+  .bodyImage {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .bodyImage img {
+    width: 100%;
+  }
 }
