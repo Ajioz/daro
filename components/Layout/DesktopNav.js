@@ -1,7 +1,7 @@
 import React, { useState, useRef, useCallback } from "react";
 import Image from "next/image";
-import useNavbarMonitor from ".@/components/useNavbarMonitor";
-import styles from ".@/components/DesktopNav.module.css";
+import useNavbarMonitor from "@/components/useNavbarMonitor";
+import styles from "@/components/DesktopNav.module.css";
 import { IoBasket, IoHeart, IoSearch } from "react-icons/io5";
 
 const DesktopNav = ({ router, target, title, loggedIn }) => {
