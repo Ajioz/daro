@@ -1,6 +1,6 @@
 import React from "react";
-import PageHead from "./PageHead";
-import Navbar from "./navbar";
+import PageHead from ".@/components/PageHead";
+import Navbar from ".@/components/navbar";
 // import Footer from "./Footer";
 import Footer from "@/components/Layout/Footer";
 

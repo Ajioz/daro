@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import DesktopNav from "./DesktopNav";
+import DesktopNav from ".@/components/DesktopNav";
 
 const Navbar = ({ title }) => {
   const [target, setTarget] = useState({ isHome: true, targetKey: "" });
