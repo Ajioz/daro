@@ -9,7 +9,7 @@ import {
   IoMailOpen,
 } from "react-icons/io5";
 import Link from "next/link";
-import NewsLetter from "@/components/Home/Blog/newsLetter";
+import NewsLetter from "../Home/Blog/newsLetter";
 
 export default function Footer() {
   return (

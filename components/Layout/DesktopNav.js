@@ -1,8 +1,8 @@
 import React, { useState, useRef, useCallback } from "react";
 import Image from "next/image";
-import useNavbarMonitor from "@/components/useNavbarMonitor";
-import styles from "@/components/DesktopNav.module.css";
+import styles from "./DesktopNav.module.css";
 import { IoBasket, IoHeart, IoSearch } from "react-icons/io5";
+import useNavbarMonitor from "./useNavbarMonitor";
 
 const DesktopNav = ({ router, target, title, loggedIn }) => {
   const { navbarRef, isOutOfView } = useNavbarMonitor();
