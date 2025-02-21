@@ -14,7 +14,7 @@ import NewsLetter from "../Home/Blog/newsLetter";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-        <NewsLetter />
+      <NewsLetter />
       <div className={styles.footerWrapper}>
         <section className={styles.space}></section>
         {/* Left Section */}
@@ -60,7 +60,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
         {/* Explore Section */}
         <div className={styles.footerSection}>
           <h3>
@@ -96,10 +95,10 @@ const Footer = () => {
             <Link href="mailto:info@daro.ng.org">info@daro.ng.org</Link>
           </p>
           <p>
-            <IoCall size={20} /> +234 7032 9429 93
+            <IoCall size={20} /> +234 7032942993
           </p>
           <p>
-            <IoCall size={20} /> +234 7064 7991 93
+            <IoCall size={20} /> +234 7064799193
           </p>
           {/* <p>
           <Link href="#">Messages</Link> | <Link href="#">Logout</Link>
@@ -160,6 +159,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

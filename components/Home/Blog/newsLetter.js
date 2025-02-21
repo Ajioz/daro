@@ -6,7 +6,7 @@ const NewsLetter = () => {
     <div className={styles.container}>
       <h1>Subscribe our Newsletter</h1>
       <p>
-        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.
+       Stay updated with the latest news and exclusive offers. Join our community and never miss out!
       </p>
       <section className={styles.Wrapper}>
         <form action="#" method="post" className={styles.formWrapper}>
