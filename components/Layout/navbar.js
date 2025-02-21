@@ -25,6 +25,7 @@ const Navbar = ({ title }) => {
 
   return (
     <>
+      <MobileNav />
       <DesktopNav
         router={router}
         target={target}
@@ -36,3 +37,7 @@ const Navbar = ({ title }) => {
 };
 
 export default Navbar;
+
+const MobileNav = () => {
+  return <>MObile</>;
+};
