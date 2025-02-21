@@ -1,3 +1,5 @@
+import { IoChatbubbles, IoHome, IoInformationCircle, IoSchool } from "react-icons/io5";
+
 export const onGoingProject = [
   {
     _id: "finance_01",
@@ -84,3 +86,31 @@ export const blog = [
     date: "2021-08-08",
   },
 ];
+
+export const menu = [
+  {
+    title: "Home",
+    link: "/",
+    icon: <IoHome size={30} />,
+  },
+  {
+    title: "About Us",
+    link: "/about",
+    icon: <IoInformationCircle size={30} />,
+  },
+  {
+    title: "Programs",
+    link: "/programs",
+    icon: <IoSchool size={30} />,
+  },
+  {
+    title: "Testimonies",
+    link: "/testimonies",
+    icon: <IoChatbubbles size={30} />,
+  },
+  {
+    title: "Gallery",
+    link: "/gallery",
+    icon: <IoImagee size={30} />,
+  },
+]

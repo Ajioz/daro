@@ -1,0 +1,157 @@
+/* drawer.module.css */
+.menuContainer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 30%;
+  height: 100%;
+  padding: 0 0.5rem;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuContainer.open {
+  left: 0;
+}
+
+.drawerContainer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 30%;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerContainer.open {
+  right: 0;
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 98%;
+  height: 20px;
+  padding: 20px 0.25rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+
+.drawerHeader h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.closeButton {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.drawerItem,
+.drawerMenuItem {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 100px;
+  gap: 1rem;
+  padding: 0.25rem;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.drawerItem:last-child {
+  border-bottom: none;
+}
+
+.drawerItem:hover {
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  font-size: 2rem;
+  color: #3498db;
+  background-color: #efefef;
+  width: 70px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.imageWrapper svg {
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.imageWrapper:hover {
+  color: #e74c3c;
+  transform: scale(1.1);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.content p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.25rem 0 0;
+}
+
+.textContainer,
+.textHeader {
+  display: flex;
+  width: 99%;
+  height: 50px;
+  justify-content: space-between;
+  margin: 0 0 0 6px;
+  padding: 0 10px 0 0;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.textHeader a {
+  text-decoration: none;
+  font-size: 12px;
+  color: orange;
+  margin-right: 10px;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  font-size: 25px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 100;
+  font-family: sans-serif;
+}
