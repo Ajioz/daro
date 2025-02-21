@@ -39,5 +39,5 @@ const Navbar = ({ title }) => {
 export default Navbar;
 
 const MobileNav = () => {
-  return <>MObile</>;
+  return <>Mobile Menu - next</>;
 };

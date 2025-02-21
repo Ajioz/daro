@@ -1,4 +1,10 @@
-import { IoChatbubbles, IoHome, IoInformationCircle, IoSchool } from "react-icons/io5";
+import {
+  IoChatbubbles,
+  IoHome,
+  IoImage,
+  IoInformationCircle,
+  IoSchool,
+} from "react-icons/io5";
 
 export const onGoingProject = [
   {
@@ -53,7 +59,6 @@ export const onGoingProject = [
     description: "A healthy society produces better children",
   },
 ];
-
 
 export const blog = [
   {
@@ -111,6 +116,6 @@ export const menu = [
   {
     title: "Gallery",
     link: "/gallery",
-    icon: <IoImagee size={30} />,
+    icon: <IoImage size={30} />,
   },
-]
+];
