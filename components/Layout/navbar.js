@@ -1,6 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import DesktopNav from "./DesktopNav";
+import navStyle from "./navbar.module.css";
+import { IoMenu } from "react-icons/io5";
+import Drawer from "./drawer";
 
 const Navbar = ({ title }) => {
   const [target, setTarget] = useState({ isHome: true, targetKey: "" });
@@ -39,5 +42,18 @@ const Navbar = ({ title }) => {
 export default Navbar;
 
 const MobileNav = () => {
-  return <>Mobile Menu - next</>;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <>
+      <div className={navStyle.navbarContainer}>
+        <IoMenu size={30} onClick={handleToggleMenu} />
+        <Drawer isOpen={isOpen} handleToggleMenu={handleToggleMenu} />
+      </div>
+    </>
+  );
 };

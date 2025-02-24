@@ -1,22 +1,20 @@
 // Drawer.js
-import React, { useState } from "react";
+import React from "react";
 import { BiChevronRight } from "react-icons/bi";
 import { menu } from "@/data";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./drawer.module.css";
 
-const Drawer = () => {
+const Drawer = ({ isOpen, handleToggleMenu }) => {
   const { push } = useRouter();
-  const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggleMenu = () => {
-    setIsOpen(!isOpen);
+  const openChoice = (link) => {
+    push(link);
   };
 
-  const forceBack = () => {
-    push("/");
-    handleToggleMenu();
+  const forceBack = (link) => {
+    push(link);
   };
 
   const renderMenuItems = (items) =>
@@ -33,26 +31,18 @@ const Drawer = () => {
 
   return (
     <>
-      <div className={`${styles.menuContainer} ${menuOpen ? styles.open : ""}`}>
+      <div className={`${styles.menuContainer} ${isOpen ? styles.open : ""}`}>
         <div className={styles.drawerHeader}>
           <Image
-            src="/images/sabiLogo.png"
-            width={42}
-            height={35}
-            alt="sabiLogo"
+            src="/images/logo/logo-1.png"
+            width={142}
+            height={50}
+            alt="Daro"
             onClick={forceBack}
           />
           <button className={styles.closeButton} onClick={handleToggleMenu}>
             ✕
           </button>
-        </div>
-        <div className={styles.textContainer}>
-          <p>NEED HELP?</p>
-          <BiChevronRight size={25} />
-        </div>
-        <div className={styles.textHeader}>
-          <p>MY SABI ACCOUNT</p>
-          <BiChevronRight size={25} />
         </div>
         {renderMenuItems(menu)}
       </div>
