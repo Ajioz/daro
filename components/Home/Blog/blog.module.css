@@ -107,6 +107,14 @@
   .container {
     flex-direction: column;
   }
+
+  .container .header h3{
+    font-size: 1.3rem;
+  }
+  .container .header h1{
+    font-size: 2.5rem;
+  }
+
   .container .blogs .blogCard {
     margin: 20px auto;
   }
