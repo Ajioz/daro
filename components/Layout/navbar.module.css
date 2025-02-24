@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  .navbarContainer {
+  .navbarContainer, .mobileWrapper {
     display: none;
   }
 }
