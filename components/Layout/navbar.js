@@ -4,6 +4,8 @@ import DesktopNav from "./DesktopNav";
 import navStyle from "./navbar.module.css";
 import { IoMenu } from "react-icons/io5";
 import Drawer from "./drawer";
+import useNavbarMonitor from "./useNavbarMonitor";
+import Donate from "./donate";
 
 const Navbar = ({ title }) => {
   const [target, setTarget] = useState({ isHome: true, targetKey: "" });
@@ -42,6 +44,7 @@ const Navbar = ({ title }) => {
 export default Navbar;
 
 const MobileNav = () => {
+  const { navbarRef, isOutOfView } = useNavbarMonitor();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleMenu = () => {
@@ -50,9 +53,25 @@ const MobileNav = () => {
 
   return (
     <>
-      <div className={navStyle.navbarContainer}>
-        <IoMenu size={30} onClick={handleToggleMenu} color="#fff"/>
-        <Drawer isOpen={isOpen} handleToggleMenu={handleToggleMenu} />
+      <div className={navStyle.mobileWrapper}>
+        <div className={navStyle.firstNavBar} ref={navbarRef}>
+          <IoMenu size={30} onClick={handleToggleMenu} color="#fff" />
+          {!isOutOfView && (
+            <Drawer isOpen={isOpen} handleToggleMenu={handleToggleMenu} />
+          )}
+        </div>
+        <div
+          className={`${navStyle.secondaryNavbar} ${
+            isOutOfView ? navStyle.secondaryNavbarVisible : ""
+          }`}
+        >
+          {" "}
+          <Donate />
+          <IoMenu size={30} onClick={handleToggleMenu} color="#fff" />
+          {isOutOfView && (
+            <Drawer isOpen={isOpen} handleToggleMenu={handleToggleMenu} />
+          )}
+        </div>
       </div>
     </>
   );

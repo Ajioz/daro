@@ -1,8 +1,8 @@
 import React, { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import styles from "./DesktopNav.module.css";
-import { IoBasket, IoHeart, IoSearch } from "react-icons/io5";
 import useNavbarMonitor from "./useNavbarMonitor";
+import Donate from "./donate";
 
 const DesktopNav = ({ router, target, title, loggedIn }) => {
   const { navbarRef, isOutOfView } = useNavbarMonitor();
@@ -72,14 +72,7 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
                   <li>Gallery</li>
                 </ul>
               </div>
-              <div className={styles.donate}>
-                <IoSearch size={30} />
-                <IoBasket size={30} />
-                <div className={styles.donateBtn}>
-                  <IoHeart size={20} style={{ zIndex: 1 }} />
-                  <span>Donate</span>
-                </div>
-              </div>
+              <Donate />
             </div>
           </>
         ) : (

@@ -156,6 +156,16 @@ const Footer = () => {
           © 2024 -{new Date().toLocaleDateString("en-US", { year: "numeric" })}{" "}
           | Daro Nigeria. All rights reserved.
         </p>
+        <p style={{ marginTop: "10px" }}>
+          powered by{" "}
+          <Link
+            href="https://ajiozi.com"
+            target="_blank"
+            style={{ color: "skyblue" }}
+          >
+            Ajiozi
+          </Link>
+        </p>
       </div>
     </footer>
   );
