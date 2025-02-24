@@ -51,7 +51,7 @@ const MobileNav = () => {
   return (
     <>
       <div className={navStyle.navbarContainer}>
-        <IoMenu size={30} onClick={handleToggleMenu} />
+        <IoMenu size={30} onClick={handleToggleMenu} color="#fff"/>
         <Drawer isOpen={isOpen} handleToggleMenu={handleToggleMenu} />
       </div>
     </>
