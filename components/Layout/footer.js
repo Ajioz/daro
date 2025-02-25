@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="whatsapp://send?text=Hello, I am interested in learning more about your NGO. Could you please provide more details?&phone=+234xxxxxxxx"
+                  href="whatsapp://send?text=Hello, I am interested in learning more about your NGO. Could you please provide more details?&phone=+2347032942993"
                   target="_blank"
                 >
                   <IoLogoWhatsapp size={20} />

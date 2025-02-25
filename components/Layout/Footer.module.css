@@ -223,6 +223,7 @@
   width: 85%;
   text-align: center;
   font-size: 1rem;
+  padding-left: 13%;
   color: #fff;
 }
 
@@ -273,5 +274,6 @@
     font-size: 1rem;
     color: #fff;
     margin-bottom: 10px;
+    padding-left: 0;
   }
 }
