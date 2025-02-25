@@ -6,6 +6,7 @@ import {
   IoLogoInstagram,
   IoLogoTwitter,
   IoLogoWhatsapp,
+  IoLogoYoutube,
   IoMailOpen,
 } from "react-icons/io5";
 import Link from "next/link";
@@ -48,13 +49,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="https://web.facebook.com/daro" target="_blank">
+                <Link href="https://www.facebook.com/share/15zivZkprA/" target="_blank">
                   <IoLogoFacebook size={20} />
                 </Link>
               </li>
               <li>
-                <Link href="https://x.com/daro" target="_blank">
-                  <IoLogoTwitter size={20} />
+                <Link href="https://youtube.com/@daronigeria?si=oOXRbxEXtVRxNxCM" target="_blank">
+                  <IoLogoYoutube size={20} />
                 </Link>
               </li>
             </ul>

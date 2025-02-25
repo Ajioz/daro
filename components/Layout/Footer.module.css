@@ -110,11 +110,11 @@
 }
 
 .socialIcons a[href*="x.com"] {
-  color: #000;
+  color: red;
 }
 
 .socialIcons a[href*="x.com"]:hover {
-  background: #000;
+  background: red;
   color: white;
 }
 
