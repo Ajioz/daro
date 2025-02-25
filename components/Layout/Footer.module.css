@@ -109,11 +109,11 @@
   color: white;
 }
 
-.socialIcons a[href*="x.com"] {
+.socialIcons a[href*="youtube.com"] {
   color: red;
 }
 
-.socialIcons a[href*="x.com"]:hover {
+.socialIcons a[href*="youtube.com"]:hover {
   background: red;
   color: white;
 }
