@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./DesktopNav.module.css";
 import useNavbarMonitor from "./useNavbarMonitor";
 import Donate from "./donate";
+import { menu } from "@/data";
 
 const DesktopNav = ({ router, target, title, loggedIn }) => {
   const { navbarRef, isOutOfView } = useNavbarMonitor();
@@ -32,6 +33,10 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
     router.push("/");
   }, []);
 
+  const goLink = useCallback((link) => {
+    router.push(link);
+  }, []);
+
   return (
     <div className={`${styles.navbarContainer}`}>
       <div className={styles.mainNavbar} ref={navbarRef}>
@@ -42,11 +47,11 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
           onClick={goHome}
         />
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Programs</li>
-          <li>Testimonies</li>
-          <li>Gallery</li>
+          {menu.map(({ title, link }) => (
+            <li key={title} onClick={() => goLink(link)}>
+              {title}
+            </li>
+          ))}
         </ul>
         <HelpComponent
           items={helpLinks}
@@ -65,11 +70,11 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
             <div className={`${styles.section} ${styles.sectionUtility}`}>
               <div className={styles.mainNavbar}>
                 <ul>
-                  <li>Home</li>
-                  <li>About Us</li>
-                  <li>Programs</li>
-                  <li>Testimonies</li>
-                  <li>Gallery</li>
+                  {menu.map(({ title, link }) => (
+                    <li key={title} onClick={() => goLink(link)}>
+                      {title}
+                    </li>
+                  ))}
                 </ul>
               </div>
               <Donate />

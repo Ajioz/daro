@@ -1,6 +1,5 @@
 // Drawer.js
 import React from "react";
-import { BiChevronRight } from "react-icons/bi";
 import { menu } from "@/data";
 import { useRouter } from "next/router";
 import Image from "next/image";
