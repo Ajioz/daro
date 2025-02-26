@@ -68,19 +68,19 @@ const Footer = () => {
           </h3>
           <ul>
             <li>
-              <Link href="#">About Daro</Link>
+              <Link href="/about">About Daro</Link>
             </li>
             <li>
-              <Link href="#">Meet the Team</Link>
+              <Link href="/about">Meet the Team</Link>
             </li>
             <li>
-              <Link href="#">News & Media</Link>
+              <Link href="/blog">News & Media</Link>
             </li>
             <li>
-              <Link href="#">Our Projects</Link>
+              <Link href="/programs">Our Projects</Link>
             </li>
             <li>
-              <Link href="#">Contact</Link> | <Link href="#">FAQ</Link>
+              <Link href="/contact">Contact</Link> | <Link href="#">FAQ</Link>
             </li>
           </ul>
         </div>

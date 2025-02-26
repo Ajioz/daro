@@ -110,7 +110,7 @@ export const menu = [
   },
   {
     title: "Testimonies",
-    link: "/testimonies",
+    link: "/testimony",
     icon: <IoChatbubbles size={30} />,
   },
   {
