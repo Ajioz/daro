@@ -2,9 +2,9 @@ import Layout from "@/components/Layout";
 import HeroExtension from "@/components/Layout/heroextension";
 import React from "react";
 
-
 const aboutHead = {
-  headTitle: "Daro | Empowering Communities Through Sustainable Development",
+  headTitle:
+    "About Daro | Empowering Communities Through Sustainable Development",
   description:
     "Learn about Daro, a dedicated NGO committed to empowering communities through sustainable development, education, healthcare, and environmental conservation. Join us in making a positive impact.",
   keywords:

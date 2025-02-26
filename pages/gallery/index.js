@@ -4,11 +4,11 @@ import HeroExtension from "@/components/Layout/heroextension";
 
 
 const galleryHead = {
-  headTitle: "Daro | Empowering Communities Through Sustainable Development",
+  headTitle: "Daro | Gallery",
   description:
-    "Learn about Daro, a dedicated NGO committed to empowering communities through sustainable development, education, healthcare, and environmental conservation. Join us in making a positive impact.",
+    "Explore our gallery showcasing the impactful work of Daro in communities. Witness the transformation and positive changes brought about through our sustainable development initiatives.",
   keywords:
-    "Daro, NGO, sustainable development, community empowerment, education, healthcare, environmental conservation, social impact, non-profit organization",
+    "Daro, gallery, community impact, sustainable development, transformation, NGO, non-profit organization, social change, community projects",
 };
 
 

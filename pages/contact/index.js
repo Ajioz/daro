@@ -3,11 +3,11 @@ import HeroExtension from "@/components/Layout/heroextension";
 import React from "react";
 
 const contactHead = {
-  headTitle: "Daro | Empowering Communities Through Sustainable Development",
-  description:
-    "Learn about Daro, a dedicated NGO committed to empowering communities through sustainable development, education, healthcare, and environmental conservation. Join us in making a positive impact.",
-  keywords:
-    "Daro, NGO, sustainable development, community empowerment, education, healthcare, environmental conservation, social impact, non-profit organization",
+    headTitle: "Contact Daro | Get in Touch with Us",
+    description:
+        "Reach out to Daro for any inquiries, support, or partnership opportunities. We are here to assist you and provide information about our initiatives in sustainable development, education, healthcare, and environmental conservation.",
+    keywords:
+        "Daro, contact, inquiries, support, partnership, sustainable development, community empowerment, education, healthcare, environmental conservation, non-profit organization",
 };
 
 const Contact = () => {

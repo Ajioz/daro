@@ -3,11 +3,11 @@ import Layout from "@/components/Layout";
 import HeroExtension from "@/components/Layout/heroextension";
 
 const testimonyHead = {
-  headTitle: "Daro | Empowering Communities Through Sustainable Development",
+  headTitle: "Daro | Inspiring Stories of Change and Impact",
   description:
-    "Learn about Daro, a dedicated NGO committed to empowering communities through sustainable development, education, healthcare, and environmental conservation. Join us in making a positive impact.",
+    "Discover inspiring testimonies from individuals and communities positively impacted by Daro's initiatives. Read their stories of transformation and hope, and see how sustainable development can make a real difference.",
   keywords:
-    "Daro, NGO, sustainable development, community empowerment, education, healthcare, environmental conservation, social impact, non-profit organization",
+    "Daro, testimonies, success stories, community impact, sustainable development, empowerment, transformation, positive change, NGO, non-profit organization",
 };
 
 const Testimonies = () => {
