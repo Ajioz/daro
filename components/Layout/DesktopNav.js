@@ -63,30 +63,19 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
       <div
         className={`${styles.secondaryNavbar} ${
           isOutOfView ? styles.secondaryNavbarVisible : ""
-        }`}
-      >
-        {target.isHome ? (
-          <>
-            <div className={`${styles.section} ${styles.sectionUtility}`}>
-              <div className={styles.mainNavbar}>
-                <ul>
-                  {menu.map(({ title, link }) => (
-                    <li key={title} onClick={() => goLink(link)}>
-                      {title}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <Donate />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className={styles.advertSpecial}>
-              <p>{target.targetKey || title} latest news Here!</p>
-            </div>
-          </>
-        )}
+        }`}>
+        <div className={`${styles.section} ${styles.sectionUtility}`}>
+          <div className={styles.mainNavbar}>
+            <ul>
+              {menu.map(({ title, link }) => (
+                <li key={title} onClick={() => goLink(link)}>
+                  {title}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Donate />
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,14 @@
-import React from 'react'
+import Layout from "@/components/Layout";
+import HeroExtension from "@/components/Layout/heroextension";
+import React from "react";
 
 const About = () => {
   return (
-    <div>About Us</div>
-  )
-}
+    <Layout title={"About"}>
+      <HeroExtension title={"About Us"} />
+      
+    </Layout>
+  );
+};
 
 export default About;
