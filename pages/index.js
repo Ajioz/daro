@@ -1,4 +1,4 @@
-import About from "@/components/About";
+import Philosophy from "@/components/Home/Philosophy";
 import HomeComponent from "@/components/Home";
 import Blog from "@/components/Home/Blog";
 import FundRaising from "@/components/Home/Fundraising";
@@ -13,7 +13,7 @@ export default function Home() {
       <Layout title={"Home"}>
         <HomeComponent />
         <RollOver />
-        <About />
+        <Philosophy />
         <FundRaising />
         <Report />
         <Blog />

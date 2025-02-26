@@ -15,6 +15,7 @@ const About = () => {
   return (
     <Layout title={"About"} head={aboutHead}>
       <HeroExtension title={"About Us"} />
+      
     </Layout>
   );
 };
