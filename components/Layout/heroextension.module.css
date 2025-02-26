@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+  height: 50vh;
+  width: 100%;
+  background-color: #212121;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(0, 58, 30, 0.462)),
+    url("/images/main/hero_ext.jpg") no-repeat center center/cover;
+}
+
+.container p {
+  color: #ff8f00;
+  font-size: 2.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 200;
+}
