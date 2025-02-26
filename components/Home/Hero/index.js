@@ -33,6 +33,8 @@ const Hero = () => {
             style={{
               backgroundImage: `url(${img})`,
               backgroundPositionX: "left",
+              height: "100%",
+              width: "100%",
               zIndex: index === currentIndex ? 2 : 1,
             }}
           />

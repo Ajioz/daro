@@ -34,6 +34,7 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
   }, []);
 
   const goLink = useCallback((link) => {
+    console.log(link);
     router.push(link);
   }, []);
 
@@ -42,6 +43,7 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
       <div className={styles.mainNavbar} ref={navbarRef}>
         <Image
           src={"/images/logo/logo-2.png"}
+          alt="Daro Logo"
           height={36}
           width={114}
           onClick={goHome}
@@ -63,12 +65,13 @@ const DesktopNav = ({ router, target, title, loggedIn }) => {
       <div
         className={`${styles.secondaryNavbar} ${
           isOutOfView ? styles.secondaryNavbarVisible : ""
-        }`}>
+        }`}
+      >
         <div className={`${styles.section} ${styles.sectionUtility}`}>
           <div className={styles.mainNavbar}>
             <ul>
               {menu.map(({ title, link }) => (
-                <li key={title} onClick={() => goLink(link)}>
+                <li key={title + link} onClick={() => goLink(link)}>
                   {title}
                 </li>
               ))}

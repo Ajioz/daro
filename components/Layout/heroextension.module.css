@@ -16,3 +16,12 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 200;
 }
+
+
+/* Responsive Mobile */
+@media screen and (max-width: 768px) {
+  .container p {
+    font-size: 2.0rem;
+    font-family: Helvetica, sans-serif;
+  }
+} 
