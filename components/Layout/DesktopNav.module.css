@@ -215,7 +215,7 @@
   border-left: 1px solid #ddd;
 }
 
-.donate .donateBtn {
+.donateBtn {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -230,7 +230,7 @@
   transition: color 0.3s ease-in-out;
 }
 
-.donate .donateBtn::after {
+.donateBtn::after {
   position: absolute;
   content: "";
   top: 0;
@@ -245,11 +245,12 @@
   z-index: 0;
 }
 
-.donate .donateBtn span {
+.donateBtn span {
+  color: #fff;
   position: relative;
   z-index: 1;
 }
 
-.donate .donateBtn:hover::after {
+.donateBtn:hover::after {
   transform: scaleX(1);
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import styles from "./profile.module.css";
+import { CustomBtn } from "../Layout/donate";
 
 const Profile = () => {
   return (
@@ -32,9 +33,9 @@ export const CampaignFundsCard = ({ amount, label }) => {
 export const HeroSection = () => {
   return (
     <section className={styles.hero}>
-      <p className={styles.community}>Our Mission</p>
+      <p className={styles.community}>Our Purpose</p>
       <h1 className={styles.heading}>
-        Empowering the Poor and Underserved in Nigeria
+        To manifest God's love and compassion in the life of all
       </h1>
       <div className={styles.buttonGroup}>
         <button className={styles.infoButton}>
@@ -45,11 +46,24 @@ export const HeroSection = () => {
         </button>
       </div>
       <p className={styles.description}>
+        The Divine Assistance Relief Organisation (DARO) was established in 2024
+        as a humanitarian organization to provide relief and developmental
+        assistance to individuals and communities in Nigeria. DARO's mission is
+        to improve the quality of life of people in need by assessing needs,
+        creating awareness, providing resources, and working with communities,
+        organisations, local churches and government. DARO provides assistance
+        regardless of ethnicity, political affiliation, gender, or religious
+        association. DARO's work includes community development; food security
+        and nutrition; protection services; water, sanitation and hygiene
+        (WASH); Health Services, Education; Shelter and Reconstruction; Economic
+        Recovery and Livelihood; Advocacy and Policy Work, Climate Change
+        Adaptation etc. <br />
         We are dedicated to improving the lives of the poor and underserved
         communities in Nigeria through various initiatives and programs. Join us
         in making a difference and bringing hope to those in need.
       </p>
-      <button className={styles.ctaButton}>Learn More</button>
+      <p className={styles.description}></p>
+      <CustomBtn showHeart="none" value="Learn More" />
     </section>
   );
 };

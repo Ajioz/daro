@@ -7,12 +7,18 @@ const Donate = () => {
     <div className={styles.donate}>
       <IoSearch size={30} />
       <IoBasket size={30} />
-      <div className={styles.donateBtn}>
-        <IoHeart size={20} style={{ zIndex: 1 }} />
-        <span>Donate</span>
-      </div>
+      <CustomBtn showHeart={"block"} value={"Donate"} />
     </div>
   );
 };
 
 export default Donate;
+
+export const CustomBtn = ({ value, showHeart }) => {
+  return (
+    <div className={styles.donateBtn}>
+      <IoHeart size={20} style={{ zIndex: 1, display: showHeart }} />
+      <span>{value}</span>
+    </div>
+  );
+};

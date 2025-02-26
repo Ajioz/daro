@@ -146,8 +146,8 @@
   font-size: 1rem;
   color: #666;
   line-height: 1.6;
-  margin-bottom: 50px;
-  text-align: left;
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 .ctaButton {
@@ -161,6 +161,11 @@
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.ctaButton::after{
+  content: ">";
+  margin-left: 10px;
 }
 
 .ctaButton:hover {
@@ -233,7 +238,6 @@
     margin-bottom: 10px;
   }
   .buttonGroup {
-    /* flex-direction: column; */
     gap: 10px;
   }
   .infoButton {
