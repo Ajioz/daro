@@ -32,23 +32,22 @@ export const CampaignFundsCard = ({ amount, label }) => {
 export const HeroSection = () => {
   return (
     <section className={styles.hero}>
-      <p className={styles.community}>Our Community</p>
+      <p className={styles.community}>Our Mission</p>
       <h1 className={styles.heading}>
-        Welcome to Daro Nigeria a Non Proft Organization
+        Empowering the Poor and Underserved in Nigeria
       </h1>
       <div className={styles.buttonGroup}>
         <button className={styles.infoButton}>
-          <FaCheckCircle className={styles.icon} /> Prosper in this volatile
+          <FaCheckCircle className={styles.icon} /> Suport US
         </button>
         <button className={styles.infoButton}>
-          <FaCheckCircle className={styles.icon} /> Prosper in this volatile
+          <FaCheckCircle className={styles.icon} /> Join Our Mission
         </button>
       </div>
       <p className={styles.description}>
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form, by injected humour, or
-        randomised words which don&apos;t look even slightly believable. If you
-        are going to use a passage.
+        We are dedicated to improving the lives of the poor and underserved
+        communities in Nigeria through various initiatives and programs. Join us
+        in making a difference and bringing hope to those in need.
       </p>
       <button className={styles.ctaButton}>Learn More</button>
     </section>
