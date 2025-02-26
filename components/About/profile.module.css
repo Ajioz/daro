@@ -1,0 +1,206 @@
+/* .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  background-image: url("/images/main/welcome.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  margin-bottom: 50px;
+} */
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/main/welcome.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  opacity: 0.04; /* Adjust this value for more or less fading */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container .left,
+.container .right {
+  flex: 1;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/* styles/CampaignFundsCard.module.css */
+.card {
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  width: 100%;
+  background-color: #212121;
+  background: url("/images/main/about_main.webp") no-repeat center
+    center/contain;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.fundBubble {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50px;
+  right: 10px;
+  background-color: #ff6f00;
+  color: white;
+  padding: 10px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 12px 4px 20px 1px rgba(255, 111, 0, 0.6);
+}
+
+.amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 0.9rem;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* styles/HeroSection.module.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.community {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.infoButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.infoButton:hover {
+  background: #f9f9f9;
+}
+
+.icon {
+  color: #ff9900;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.ctaButton {
+  align-items: left;
+  padding: 12px 25px;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #e65c00;
+}
+
+/* Mobile reposiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 30vh;
+  }
+  .fundBubble {
+    top: 60px;
+    right: -40px;
+    width: 100px;
+    height: 100px;
+  }
+  .amount {
+    font-size: 1.2rem;
+  }
+  .label {
+    font-size: 0.7rem;
+  }
+  .card {
+    width: 340px;
+  }
+}
