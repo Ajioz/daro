@@ -1,6 +1,7 @@
+import React from "react";
+import AboutComponent from "@/components/About";
 import Layout from "@/components/Layout";
 import HeroExtension from "@/components/Layout/heroextension";
-import React from "react";
 
 const aboutHead = {
   headTitle:
@@ -15,7 +16,7 @@ const About = () => {
   return (
     <Layout title={"About"} head={aboutHead}>
       <HeroExtension title={"About Us"} />
-      
+      <AboutComponent />
     </Layout>
   );
 };
