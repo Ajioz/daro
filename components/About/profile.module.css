@@ -60,8 +60,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: 50px;
-  right: 10px;
+  top: 40px;
+  right: 50px;
   background-color: #ff6f00;
   color: white;
   padding: 10px;
@@ -163,13 +163,63 @@
   transition: 0.3s;
 }
 
-.ctaButton::after{
+.ctaButton::after {
   content: ">";
   margin-left: 10px;
 }
 
 .ctaButton:hover {
   background-color: #e65c00;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modalContainer .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  min-height: 60vh; /* Prevent overflow */
+  padding: 20px 30px;
+  background-color: #212121;
+  border-radius: 20px;
+  overflow: auto;
+  z-index: 15;
+}
+.modalContainer .content h1 {
+  font-size: 18px;
+  color: #ff8f00 ;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+.modalContainer .content p {
+  color: #ddd;
+  font-family: poppin;
+  font-size: 18px;
+  text-align: justify;
+  margin: 5px 0;
+}
+
+.modalContainer .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
 }
 
 /* Mobile reposiveness */
@@ -249,5 +299,40 @@
   .ctaButton {
     padding: 10px 20px;
     font-size: 0.9rem;
+  }
+
+  .modalContainer .content {
+   
+    width: 400px;
+    min-height: 60vh; /* Prevent overflow */
+    padding: 20px;
+    background-color: #212121;
+    border-radius: 20px;
+    overflow: auto;
+    z-index: 15;
+  }
+  .modalContainer .content h1 {
+    font-size: 14px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+  }
+  .modalContainer .content p {
+    color: #ddd;
+    font-family: poppin;
+    font-size: 18px;
+    text-align: justify;
+    margin: 5px 0;
+  }
+
+  .modalContainer .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
   }
 }

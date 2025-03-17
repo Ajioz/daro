@@ -8,7 +8,7 @@ const AboutComponent = () => {
   return (
     <div className={styles.container}>
       <Profile />
-      <Campaign />
+      {/* <Campaign /> */}
       <Team />
     </div>
   );

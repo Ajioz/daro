@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import styles from "./profile.module.css";
 import { CustomBtn } from "../Layout/donate";
+import { IoClose } from "react-icons/io5";
+import { about } from "@/data";
 
 const Profile = () => {
   return (
@@ -39,7 +41,7 @@ export const HeroSection = () => {
   };
   return (
     <section className={styles.hero}>
-      <p className={styles.community}>Our Purpose</p>
+      <p className={styles.community}>About Us</p>
       <h1 className={styles.heading}>
         To manifest God's love and compassion in the life of all
       </h1>
@@ -64,9 +66,27 @@ export const HeroSection = () => {
         (WASH); Health Services, Education; Shelter and Reconstruction; Economic
         Recovery and Livelihood; Advocacy and Policy Work, Climate Change
         Adaptation etc. <br />
-        We are dedicated to improving the lives of the poor and underserved
-        communities in Nigeria through various initiatives and programs. Join us
-        in making a difference and bringing hope to those in need.
+        <br />
+      </p>
+      <h4>CORE VALUES (ISEC)</h4>
+      <p className={styles.description}>
+        1. Integrity: maintaining honesty, transparency and moral uprightness in
+        all decisions and actions;
+        <p className={styles.description}>
+          {" "}
+          2. Service: humble dedication to serving others, following the example
+          of Jesus Christ;{" "}
+        </p>
+        <p className={styles.description}>
+          {" "}
+          3. Empathy: understand and share feelings, thoughts, or experiences of
+          other people, and take action or offer support to alleviate their
+          pains or struggle appropriately;{" "}
+        </p>
+        <p className={styles.description}>
+          4. Collaboration: Partnering with other organisations, government,
+          ministries, local churches and communities to maximize impact.
+        </p>
       </p>
       <p className={styles.description}></p>
       <CustomBtn showHeart="none" value="Learn More" onClick={handleModal} />
@@ -76,5 +96,22 @@ export const HeroSection = () => {
 };
 
 const Modal = ({ setOpen }) => {
-  return <>This is a modal</>;
+  return (
+    <div className={styles.modalContainer}>
+      <section className={styles.content}>
+        <IoClose
+          size={25}
+          color="#fff"
+          className={styles.close}
+          onClick={() => setOpen(false)}
+        />
+        {about.map(({ id, title, description }) => (
+          <div key={id}>
+            <h1>{title}</h1>
+            <p>{description}</p>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
 };
