@@ -1,6 +1,6 @@
 import React from "react";
 import Profile from "./profile";
-import Campaign from "./campaign";
+// import Campaign from "./campaign";
 import Team from "./team";
 import styles from "./about.module.css";
 

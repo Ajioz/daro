@@ -1,28 +1,29 @@
 import React from "react";
 import styles from "./team.module.css";
 import Image from "next/image";
+import { team } from "@/data";
 
 const Team = () => {
   return (
     <div className={styles.teamContainer}>
-      <section className={styles.memberCard}>
-        <div className={styles.chipCircle}>AS</div>
-        <p className={styles.description}>
-          Emmanuel Ajiroghene founded DARO in 2024 and serves as its Executive
-          Director. Prior to this, he established Loving the Least of These
-          (LLOT-Support), an initiative under the SDA Church in Calabar, where
-          he chaired the committee overseeing it's social activities from 2020
-          to 2023. A seasoned missionary volunteer, he has served in numerous
-          fields and is an Elder of the Seventh-day Adventist Church.
-        </p>
-        <div className={styles.office}>
-          <p className={styles.name}>Emma</p>
-          <p className={styles.portfolio}>CEO</p>
-        </div>
-        <div className={styles.chip}>
-          <Image src={"/image/src.png"} width={20} height={20} alt="teamImg" />
-        </div>
-      </section>
+      {team.map(({ id, name, portfolio, image, about }) => {
+        const nameSplit = name.split(" ");
+        const name1 = nameSplit[0].split("")[0];
+        const name2 = nameSplit[1].split("")[0];
+        return (
+          <section className={styles.memberCard} key={id}>
+            <div className={styles.chipCircle}>{name1 + name2}</div>
+            <p className={styles.description}>{about}</p>
+            <div className={styles.office}>
+              <p className={styles.name}>{name}</p>
+              <p className={styles.portfolio}>{portfolio}</p>
+            </div>
+            <div className={styles.chip}>
+              <Image src={image} width={100} height={100} alt="teamImg" />
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 };
