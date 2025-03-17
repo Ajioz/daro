@@ -209,7 +209,7 @@ Prior to her role at DARO, Happiness gained valuable experience as an Educator a
   },
   {
     id: 6,
-    name: "Abigail; Ubi",
+    name: "Abigail Ubi",
     portfolio: "Health Director ",
     image: "/images/team/Abigail_daro.png",
     about: `Abigail Stephen Ubi is a Nigerian-trained pharmacist with a deep passion for serving humanity and making a positive impact. She joined DARO in 2025 as the Health Director.
