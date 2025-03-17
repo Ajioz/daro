@@ -226,6 +226,8 @@
   background-color: #e65100;
   padding: 10px;
   border-radius: 30px;
+  border: none; /* Remove button default border */
+  outline: none; /* Remove focus outline */
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }

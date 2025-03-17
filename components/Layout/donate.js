@@ -14,11 +14,11 @@ const Donate = () => {
 
 export default Donate;
 
-export const CustomBtn = ({ value, showHeart }) => {
+export const CustomBtn = ({ value, showHeart, onClick }) => {
   return (
-    <div className={styles.donateBtn}>
-      <IoHeart size={20} style={{ zIndex: 1, display: showHeart }} />
+    <button  className={styles.donateBtn} onClick={onClick}>
+      <IoHeart size={20} style={{ zIndex: 1, color: "#fff", display: showHeart }} />
       <span>{value}</span>
-    </div>
+    </button >
   );
 };

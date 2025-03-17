@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import styles from "./profile.module.css";
 import { CustomBtn } from "../Layout/donate";
@@ -31,6 +31,12 @@ export const CampaignFundsCard = ({ amount, label }) => {
 
 // components/HeroSection.js
 export const HeroSection = () => {
+  const [Open, setOpen] = useState(false);
+
+  const handleModal = () => {
+    setOpen(!Open);
+    console.log("Modal Opened!");
+  };
   return (
     <section className={styles.hero}>
       <p className={styles.community}>Our Purpose</p>
@@ -63,7 +69,12 @@ export const HeroSection = () => {
         in making a difference and bringing hope to those in need.
       </p>
       <p className={styles.description}></p>
-      <CustomBtn showHeart="none" value="Learn More" />
+      <CustomBtn showHeart="none" value="Learn More" onClick={handleModal} />
+      {Open && <Modal setOpen={setOpen} />}
     </section>
   );
+};
+
+const Modal = ({ setOpen }) => {
+  return <>This is a modal</>;
 };
