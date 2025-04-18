@@ -3,18 +3,19 @@ import PageHead from "./PageHead";
 import Navbar from "./navbar";
 import Footer from "./footer";
 
-
-
-
-const Layout = ({ title, head, children }) => {
+const Layout = ({ title, head, children, mainClassName }) => {
   return (
     <>
       <PageHead {...head} />
       <Navbar title={title} />
-      <main className="main">{children}</main>
+      <main className={mainClassName || children?.props?.className || "main"}>
+        {children}
+      </main>
       <Footer />
     </>
   );
 };
 
 export default Layout;
+
+

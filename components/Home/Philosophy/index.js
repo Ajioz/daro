@@ -1,8 +1,10 @@
 import React from "react";
+import { useRouter } from "next/router";
 import styles from "./philosophy.module.css";
 import Image from "next/image";
 
 const About = () => {
+  const { push } = useRouter();
   return (
     <main className={styles.container}>
       <div className={styles.header}>
@@ -39,7 +41,7 @@ const About = () => {
               foundation for lasting change. Together, we’re committed to
               fostering dignity, equity, and opportunity for everyone we serve.
             </p>
-            <button>
+            <button onClick={()=>push("/about")} className={styles.btn}>
               <span>Learn More</span>
             </button>
           </div>

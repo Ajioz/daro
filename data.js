@@ -4,6 +4,7 @@ import {
   IoImage,
   IoInformationCircle,
   IoSchool,
+  IoMailUnread,
 } from "react-icons/io5";
 
 export const onGoingProject = [
@@ -117,6 +118,11 @@ export const menu = [
     title: "Gallery",
     link: "/gallery",
     icon: <IoImage size={30} />,
+  },
+  {
+    title: "Contact",
+    link: "/contact",
+    icon: <IoMailUnread size={30} />,
   },
 ];
 

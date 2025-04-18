@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import HeroExtension from "@/components/Layout/heroextension";
 import React from "react";
+import ContactComponent from "@/components/contact";
 
 const contactHead = {
     headTitle: "Contact Daro | Get in Touch with Us",
@@ -12,8 +13,9 @@ const contactHead = {
 
 const Contact = () => {
   return (
-    <Layout title={"Contact"} head={contactHead}>
+    <Layout title={"Contact"} head={contactHead} mainClassName="#141414">
       <HeroExtension title={"Contact Us"} />
+      <ContactComponent />
     </Layout>
   );
 };

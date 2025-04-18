@@ -4,7 +4,6 @@ import {
   IoCall,
   IoLogoFacebook,
   IoLogoInstagram,
-  IoLogoTwitter,
   IoLogoWhatsapp,
   IoLogoYoutube,
   IoMailOpen,
