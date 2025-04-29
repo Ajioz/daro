@@ -1,5 +1,5 @@
 import React from "react";
-import{ useRouter } from "next/router";
+import { useRouter } from "next/router";
 import fundStyle from "./fundR.module.css";
 import Image from "next/image";
 import { onGoingProject } from "@/data";
@@ -22,8 +22,12 @@ const FundRaising = () => {
                 width={200}
                 height={200}
               />
-  background-color: #141414;
-              <button className={fundStyle.btn} onClick={() => push("/contact")}>Donate Now</button>
+              <button
+                className={fundStyle.btn}
+                onClick={() => push("/contact")}
+              >
+                Donate Now
+              </button>
             </div>
             <div className={fundStyle.cardContent}>
               <div className={fundStyle.projection}>
